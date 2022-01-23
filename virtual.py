@@ -5,8 +5,9 @@ import wikipedia
 import os
 import time
 import subprocess
+import webbrowser
 import sklearn
-from ecapture import ecapture as ec
+#from ecapture import ecapture as ec
 import wolframalpha
 import json
 import requests
@@ -15,7 +16,7 @@ print('Loading your AI personal assistant - Geralt')
 
 engine=pyttsx3.init('sapi5')
 voices=engine.getProperty('voices')
-engine.setProperty('voice','voices[0].id')
+engine.setProperty('voice','voices[1].id')
 
 
 def speak(text):
@@ -151,8 +152,8 @@ if __name__=='__main__':
             time.sleep(7) 
             
             
-        elif "camera" in statement:
-            ec.capture(0, "robo camera", "img.jpg")
+        #elif "camera" in statement:
+           # ec.capture(0, "robo camera", "img.jpg")
             
             
         elif 'search' in statement:
