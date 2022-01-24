@@ -130,6 +130,7 @@ if __name__=='__main__':
             speak(f"the time is {strTime}")
             
             
+            
         elif 'who are you' in statement or 'what can you do' in statement:
             speak('I am Geralt your personal assistant. I am programmed to minor tasks like'
                   'opening youtube, google, gmail, stackoverflow, predict time, take a photo, search wikipedia, predict weather'
